@@ -9,7 +9,11 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -24,42 +28,48 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">boards</a></li>
+                    <li><a href="#boards">boards</a></li>
                     <li><a href="#">accessories</a></li>
-                    <li><a href="#">blog</a></li>
+                    <li><a href="#blog">blog</a></li>
                     <li><a href="#">technology</a></li>
-                    <li><a href="#">team</a></li>
+                    <li><a href="#team">team</a></li>
                     <li><a href="#">dealers</a></li>
                 </ul>
             </nav>
             <div class="social-media">
                 <ul>
-                    <li><a href="#"><img src="img/icon-facebook" alt="Facebook icon"></a></li>
-                    <li><a href="#"><img src="img/icon-instagram" alt="Instagram icon"></a></li>
-                    <li><a href="mailto:surfers@somesurfcompanysomewhere.com"><img src="icon-email" alt="Email icon"></a></li>
+                    <li><a href="#"><img src="img/icon-facebook.png" alt="Facebook icon"></a></li>
+                    <li><a href="#"><img src="img/icon-instagram.png" alt="Instagram icon"></a></li>
+                    <li><a href="mailto:surfers@somesurfcompanysomewhere.com"><img src="img/icon-email.png" alt="Email icon"></a></li>
                 </ul>
             </div>
+            <section>
+                <div class="slogan">
+                    <h2>Ride every wave as if it's your last</h2>
+                    <p>We love the motion of the ocean</p>
+                </div>
+            </section>
         </header>
         <main>
-            <section>
-                <h2>Ride every wave as if it's your last</h2>
-                <p>We love the motion of the ocean</p>
-            </section>
             <!-- BOARDS -->
             <section>
-                <div class="boards">
+                <div class="boards" id="boards">
+                    <img src="img/board.png" alt="surfboard">
                     <h2>JR Surfboards The Donny Stoker Yellow/Green Rail Fade</h2>
-                    <img src="img/ratings.png" alt="star ratings"> (52)
-                    <p class="product-specs">
+                    <div class="ratings">
+                        <img src="img/star.png" alt="star"><img src="img/star.png" alt="star"><img src="img/star.png" alt="star"><img src="img/star.png" alt="star"><img src="img/star-blank.png" alt="nostar"> (52)
+                    </div>
+                    <div class="product-specs">
                         <ul>
-                            <li>description</li>
-                            <li>features</li>
-                            <li>dimensions</li>
+                            <li><span class="selected">description</span></li>
+                            <li><a href="#">features</a></li>
+                            <li><a href="#">dimensions</a></li>
                         </ul>
-                    </p>
-                    <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                        <hr>
+                    </div>
+                    <p class="product-desc">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
                     <p>
-                        $499.99 <button>BUY NOW</button>
+                        <span class="price">$499.99</span> <button>BUY NOW</button>
                     </p>
                     <p>
                         <a href="#">View all boards</a>
@@ -68,8 +78,11 @@
             </section>
             <!-- ABOUT US -->
             <section>
-                <div class="about-us">
-                    <h2>WE ARE SURFERS CO.</h2>
+                <div class="about-us" id="about">
+                    <img src="img/about-surfer.png" alt="surfing in ocean">
+                </div>
+                <div class="about-col-1">
+                    <h2>WE ARE SURFERS CO.<br>x</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -78,87 +91,96 @@
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p><a href="#">Read more</a></p>
                 </div>
+                <div class="about-col-2">
+                    <a href="#"><img src="img/about-surfer-video-thubnail.png" alt="surfing video"></a>
+                </div>
             </section>
             <!-- OUR TEAM -->
             <section>
-                <div class="team-members">
+                <div class="team-members" id="team">
+                    <h2>OUR TEAM</h2>
                     <div class="member-burrow">
-                        <img src="img/taj-burrow.jpg" alt="Taj Burrow">
-                        <p>Taj Burrow<br>@tajamos<br><img src="img/waves.png"><br><img src="location.png">Yallingup, Australia</p>
+                        <img src="img/taj-burrow.png" alt="Taj Burrow">
+                        <p><h3>Taj Burrow</h3><p>@tajamos<br><img src="img/waves.png"><br><img src="img/icon-pin.png">Yallingup, Australia</p>
                     </div>
                     <div class="member-manuel">
-                        <img src="img/malia-manuel.jpg" alt="Malia Manuel">
-                        <p>Malia Manuel<br>@maliamanuel<br><img src="img/waves.png"><br><img src="location.png">Wailua, HI</p>
+                        <img src="img/malia-manuel.png" alt="Malia Manuel">
+                        <h3>Malia Manuel</h3><p>@maliamanuel<br><img src="img/waves.png"><br><img src="img/icon-pin.png">Wailua, HI</p>
                     </div>
                     <div class="member-walsh">
-                        <img src="img/ian-walsh.jpg" alt="Ian Walsh">
-                        <p>Ian Walsh<br>@ianwalsh<br><img src="img/waves.png"><br><img src="location.png"> Maui, HI</p>
+                        <img src="img/ian-walsh.png" alt="Ian Walsh">
+                        <h3>Ian Walsh</h3><p>@ianwalsh<br><img src="img/waves.png"><br><img src="img/icon-pin.png"> Maui, HI</p>
                     </div>
                     <div class="member-callaghan">
-                        <img src="img/macy-callaghan.jpg" alt="Macy Callaghan">
-                        <p>Macy Callaghan<br>@macyjanecallaghan<br><img src="img/waves.png"><br><img src="location.png">San Clemente, CA</p>
+                        <img src="img/macy-callaghan.png" alt="Macy Callaghan">
+                        <h3>Macy Callaghan</h3><p>@macyjanecallaghan<br><img src="img/waves.png"><br><img src="img/icon-pin.png">San Clemente, CA</p>
                     </div>
                 </div>
             </section>
             <!-- BLOG UPDATES -->
             <section>
-                <div class="blog">
+                <div class="blog" id="blog">
+                    <h2>LATEST UPDATES<br>x</h2>
                     <div class="blog-item">
-                        <img src="img/turner-harris.jpg" alt="surfers in ocean">
-                        <p>Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</p>
+                        <a href="#"><img src="img/blog-surfing-1.png" alt="surfers in ocean"></a>
+                        <p><a href="#">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</a></p>
                     </div>
                     <div class="blog-item">
-                        <img src="img/ocean-wave.jpg" alt="ocean wave">
-                        <p>A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</p>
+                        <a href="#"><img src="img/blog-surfing-2.png" alt="ocean wave"></a>
+                        <p><a href="#">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</a></p>
                     </div>
                     <div class="blog-item">
-                        <img src="img/surfboards.jpg">
-                        <p>Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</p>
+                        <a href="#"><img src="img/blog-surfing-3.png" alt="surfboard"></a>
+                        <p><a href="#">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</a></p>
                     </div>
                     <p><button>VIEW ALL POSTS</button></p>
                 </div>
             </section>
             <!-- INSTAGRAM -->
             <section>
-                <img src="img/instagram1.jpg" alt="ocean"><img src="img/instagram2.jpg" alt="surfers at beach">
-                <img src="img/instagram3.jpg" alt="surfboard in sand"><img src="img/instagram4.jpg" alt="ocean">
-                <p><img src="img/icon-instagram2.jpg" alt="instagram icon"> @surfersco</p>
+                <div class="instagram">
+                    <h2>INSTAGRAM</h2>
+                    <div class="photos">
+                        <img src="img/instagram-surfing-1.jpg" alt="ocean"><img src="img/instagram-surfing-2.jpg" alt="surfers at beach">
+                        <img src="img/instagram-surfing-3.jpg" alt="surfboard in sand"><img src="img/instagram-surfing-4.jpg" alt="ocean">
+                    </div>
+                    <p><img src="img/icon-instagram-blue.png" alt="instagram icon"><span class="follow-us">FOLLOW US</span> @surfersco</p>
+                </div>
             </section>
             <!-- FACEBOOK -->
             <section>
-                <img src="img/facebook.jpg" alt="facebook">
+                <div class="facebook">
+                    <img src="img/facebook.jpg" alt="facebook">
+                </div>
             </section>
             <!-- NAVIGATION -->
             <section>
-                <div class="nav">
+                <div class="nav clearfix">
                     <div class="col-1">
                         <ul>
-                            <li>About</li>
-                            <li>Boards</li>
-                            <li>Accessories</li>
-                            <li>Blog</li>
+                            <li><a href="#about"><img src="img/waves-yellow.png">About</a></li>
+                            <li><a href="#boards"><img src="img/waves-yellow.png">Boards</a></li>
+                            <li><a href="#"><img src="img/waves-yellow.png">Accessories</a></li>
+                            <li><a href="#blog"><img src="img/waves-yellow.png">Blog</a></li>
                         </ul>
                     </div>
                     <div class="col-2">
                         <ul>
-                            <li>Technology</li>
-                            <li>Team</li>
-                            <li>Dealers</li>
-                            <li>Contact us</li>
+                            <li><a href="#"><img src="img/waves-yellow.png">Technology</a></li>
+                            <li><a href="#team"><img src="img/waves-yellow.png">Team</a></li>
+                            <li><a href="#"><img src="img/waves-yellow.png">Dealers</a></li>
+                            <li><a href="#"><img src="img/waves-yellow.png">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
         </main>
         <footer>
-            <div class="copyright">
-                &copy 2017 Surfers Co.
-                <ul>
-                    <li>Design by @lucaalco</li>
-                </ul>
-            </div>
             <div class="newsletter">
                 <h3>Subscribe to our newsletter</h3>
-                <input type="email" name="email"><button>-></button>
+                <input type="email" name="email" placeholder="Your e-mail address"><input type="image" src="img/button-newsletter.png" alt="Sign Up">
+            </div>
+            <div class="copyright">
+                <p>&copy 2017 Surfers Co. - Design by @lucaalco</p>
             </div>
         </footer>
 
