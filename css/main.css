@@ -326,8 +326,7 @@ p.product-desc {
 
 /* BLOG SECTION */
 .blog {
-    padding-left: 1em;
-    padding-right: 1em;
+      width: 100%;
 }
 
 .blog h2 {
@@ -339,7 +338,8 @@ p.product-desc {
 .blog-item {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-
+    width: 17em;
+    margin: 0 auto;
 }
 
 .blog-item a {
