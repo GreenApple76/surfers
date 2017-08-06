@@ -99,6 +99,15 @@ html, body {
     font-size: 16px;
 }
 
+/* LINK STYLING */
+a {
+    color: #00B0FF;
+}
+
+.boards a:visited {
+    color: #999;
+}
+
 /* BUTTONS */
 button {
     font-family: 'Montserrat', sans-serif;
@@ -112,11 +121,15 @@ button {
 }
 
 header {
-    background: #fff url("../img/hero.png") no-repeat center center;
+    background: #fff url("../img/wave-big.jpg") no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
     background-size: cover;
+}
+
+section {
+    margin-bottom: 5em;
 }
 
 /* LOGO SECTION */
@@ -249,6 +262,10 @@ p.product-desc {
     font-size: 1.5em;
 }
 
+.boards p:nth-of-type(3) {
+    margin-bottom: 4em;
+}
+
 /* ABOUT US SECTION */
 .about-us img {
     width: 100%;
@@ -342,6 +359,18 @@ p.product-desc {
     margin: 0 auto;
 }
 
+.blog-item figure {
+    margin: 0;
+    width: 270px;
+    display: inline-block;
+}
+
+.blog-item figcaption {
+    width: 270px;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
 .blog-item a {
     color: #787878;
     text-decoration: none;
@@ -418,8 +447,8 @@ p.product-desc {
 
 .nav ul {
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding-left: 1em;
 }
 
@@ -469,7 +498,7 @@ footer input[type="image"] {
 }
 
 footer .copyright p {
-    margin-top: 2em;
+    margin: 2em 0 0 1em;
 }
 
 
@@ -555,6 +584,180 @@ footer .copyright p {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+    header {
+        height: 400px;
+    }
+
+    section {
+        margin-bottom: 10em;
+    }
+
+    .slogan p {
+        color: #333;
+    }
+
+    .boards img {
+        width: 45%;
+        max-width: 332px;
+        height: auto;
+        float: left;
+    }
+
+    .ratings img {
+        width: 14px;
+        height: 14px;
+    }
+
+    nav ul {
+        padding-left: 1em;
+        float: left;
+    }
+
+    .social-media ul {
+        padding-left: 0;
+        margin-top: -5px;
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    .about-col-1 {
+        width: 384px;
+        margin-top: -8em;
+        margin-bottom: 50em;
+        padding-left: 2em;
+        background-color: #fff;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .about-col-2 {
+        width: 30%;
+        margin-top: -3em;
+        padding-left: 28em;
+        position: absolute;
+        z-index: 1100;
+    }
+
+    .team-members {
+        margin-top: 40em;
+    }
+
+    .team-members h2 {
+        margin-top: 3em;
+    }
+
+    .member-burrow, .member-manuel, .member-walsh, .member-callaghan {
+        width: 24%;
+        display: inline-block;
+    }
+
+    .instagram .photos {
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    .instagram p {
+        margin-bottom: 4em;
+    }
+
+    .nav .col-1, .nav .col-2 {
+        width: 20%;
+        max-width: 170px;
+    }
+
+    .nav .col-2 {
+        margin-right: 10em;
+    }
+
+    .facebook img {
+        width: 50%;
+        max-width: 620px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding-top: 0;
+    }
+
+    footer h3 {
+        margin-top: 0;
+        padding-top: 2em;
+    }
+
+   
+}
+
+/* DESKTOPS */
+@media (min-width:940px) {
+
+    header {
+        background: #fff url("../img/wave-big.jpg") no-repeat center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .boards {
+        padding-bottom: 3em;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog-item {
+        width: 33%;
+        max-width: 313px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    .newsletter {
+        background-color: #000;
+        float: left;
+    }
+
+    /* .insta-face {
+        width: 100%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .instagram {
+        width: 30%;
+        max-width: 310px;
+        float: left;
+    }
+
+    .instagram .photos {
+        width: 100%;
+        max-width: 310px;
+    }
+
+    .facebook {
+        width: 30%%;
+        max-width: 310px;
+        float: left;
+    }
+
+    .facebook img {
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 7em;
+    }
+
+    */
 }
 
 @media print,
