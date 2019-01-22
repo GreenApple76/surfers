@@ -63,16 +63,29 @@
                     </div>
                     <div class="product-specs">
                         <ul>
-                            <li><span class="selected">description</span></li>
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">dimensions</a></li>
+                            <li id="description-link"><span class="selected"><a href="#">description</a></span></li>
+                            <li id="features-link"><span><a href="#">features</a></span></li>
+                            <li id="dimensions-link"><span><a href="#">dimensions</a></span></li>
                         </ul>
                         <hr>
                     </div>
-                    <p class="product-desc">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
-                    <p>
-                        <span class="price">$499.99</span> <button>BUY NOW</button>
-                    </p>
+                    <div id="description" class="tab active">
+                        <p class="product-desc">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                        <p>
+                            <span class="price">$499.99</span> <button>BUY NOW</button>
+                        </p>
+                    </div>
+                    <div id="features" class="tab">
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Ipsum</li>
+                            <li>Dolor</li>
+                    </div>    
+                    <div id="dimensions" class="tab">
+                        <p> Length: 70 inches<br>
+                            Width: 20 inches
+                        </p>
+                    </div>
                     <p>
                         <a href="#">View all boards</a>
                     </p>
@@ -187,10 +200,7 @@
                 <p>&copy 2017 Surfers Co. - Design by @lucaalco</p>
             </div>
         </footer>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

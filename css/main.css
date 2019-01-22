@@ -221,6 +221,15 @@ nav ul li, .social-media ul li {
     color: #a0a0a0;
 }
 
+.tab {
+    display: none;
+    height: 200px;
+}
+
+.active {
+    display: block;
+}
+
 .product-specs ul {
     list-style: none;
     padding-left: 0;
@@ -242,9 +251,11 @@ nav ul li, .social-media ul li {
     text-decoration: none;
 }
 
-.product-specs .selected {
+.product-specs .selected a {
+    color: #000; 
     border-bottom: 4px solid #00b0ff;
     padding-bottom: .25em;
+    cursor: pointer;
 }
 
 .product-specs hr {
